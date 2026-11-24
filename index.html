@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biologia ENEM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="nav" aria-label="Menu principal">
+  <div class="brand">🧬 <span>Biologia ENEM</span></div>
+  <button data-view="home" class="on">🏠<span>Início</span></button>
+  <button data-view="modules">📚<span>Conteúdos</span></button>
+  <button data-view="cards">🃏<span>Flashcards</span></button>
+  <button data-view="quiz">✏️<span>Quiz</span></button>
+  <button data-view="profile">🏅<span>Conquistas</span></button>
+</nav>
+<main id="app" tabindex="-1"></main>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="modal" hidden>
+  <div class="card">
+    <p>Apagar todo o progresso? Isso não pode ser desfeito.</p>
+    <div class="row"><button class="btn ghost" id="no">Cancelar</button><button class="btn bad" id="yes">Apagar tudo</button></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
